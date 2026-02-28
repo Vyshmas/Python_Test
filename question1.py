@@ -18,7 +18,7 @@ class flight:
 
 # update source and destination
     def update_method(self,new_source,new_destination=None):
-        if  new_destination == None:
+        if  new_destination is None:
             self.destination=new_source
         else:
             self.source=new_source
@@ -32,6 +32,7 @@ domestic.calculateprice(200)
 domestic.calculateprice(200,1200)
 domestic.update_method("bombay")
 domestic.update_method("bombay","Kochi")
+
 
 
 
